@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Character encoding Unicode -->
+    <meta charset="UTF-8">
+
+    <!-- Set page width to follow screen-width of device and initial zoom when page first loaded -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Latitude Analysis</title>
+    <html lang="en-us">
+
+    </html>
+
+    <!-- Bring in bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Within navbar to remove horizontal padding at breakpoints below specified -->
+            <a class="navbar-brand" href="../index.html">Latitude</a>
+            <!-- Create hamburger -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--tells bootstrap what to put in drop down menu -->
+                <ul class="navbar-nav ml-auto">
+                    <!--puts menu items to right of navbar-brand -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">
+                            Plot
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pt-3 my-3">
+        <div class="row">
+            <div class="col-sm-12 col-lg-7">
+                <h2 class="header">Wind Speed</h2>
+                <hr id="line">
+                <img src="images/Fig4.png" class="img-fluid">
+                <p>
+                    This scatterplot looks to show the relationship between wind speed and latitude. There is no clear
+                    evidence here of the trade winds which are known to blow between the equator and +/- 30 degrees in
+                    latitude
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-lg-5">
+                <h2 class="header">Visualisations</h2>
+                <hr id="line">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-6">
+                        <a href="temperature.html">
+                            <img src="images/Fig1.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-6">
+                        <a href="humidity.html">
+                            <img src="images/Fig2.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-6">
+                        <a href="cloudiness.html">
+                            <img src="images/Fig3.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-6">
+                        <a href="wind_speed.html">
+                            <img src="images/Fig4.png" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
